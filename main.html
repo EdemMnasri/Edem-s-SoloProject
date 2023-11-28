@@ -1,13 +1,72 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <title>Movies recommendation system</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <title> Movie Recommendation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <div class="container">
+        <h1>🎬 Movie Recommender 🍿</h1>
+
+        <label for="genre">Select Genre:</label>
+        <select id="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="science fiction">Science fiction</option>
+            <option value="crime">Crime</option>
+            <option value="musical">Musical</option>
+            <option value="romance">Romance</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="adventure">Adventure</option>
+            
+
+        </select>
+
+        <label for="actors">Select Actors:</label>
+        <select id="actors" multiple>
+            <option value="Tom Cruise">Tom Cruise</option>
+            <option value="Bruce Willis">Bruce Willis</option>
+            <option value="Tom Hardy">Tom Hardy</option>
+            <option value="Charlize Theron">Charlize Theron</option>
+            <option value="Christian Bale">Christian Bale</option>
+            <option value="Heath Ledger">Heath Ledger</option>
+            <option value="Ellen Page">Ellen Page</option>
+            <option value="Leonardo DiCaprio">Leonardo DiCaprio</option>
+            <option value="Scarlett Johansson">Scarlett Johansson</option>
+            <option value="Robert Downey Jr.">Robert Downey Jr.</option>
+            <option value="Laura Dern">Laura Dern</option>
+            <option value="Sam Neill">Sam Neill</option>
+            <option value="Morgan Freeman">Morgan Freeman</option>
+            <option value="Tim Robbins">Tim Robbins</option>
+            <option value="Kate Winslet">Kate Winslet</option>
+            <option value="Carrie-Anne Moss">Carrie-Anne Moss</option>
+            <option value="Keanu Reeves">Keanu Reeves</option>
+            <option value="John Travolta">John Travolta</option>
+            <option value="Robin Wright">Robin Wright</option>
+            <option value="Ian McKellen">Ian McKellen</option>
+            <option value="Elijah Wood">Elijah Wood</option>
+            <option value="Emma Stone">Emma Stone</option>
+            <option value="Ryan Gosling">Ryan Gosling</option>
+
+
+
+        </select>
+
+        <label for="duration">Select Duration Range:</label>
+        <input type="range" id="duration" min="60" max="180" step="10" value="120">
+        <span id="durationValue">120 min</span>
+
+        <button onclick="recommendMovie()"> Get Recommendation 🚀</button>
+
+        <div id="recommendation">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

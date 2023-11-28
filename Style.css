@@ -1,0 +1,74 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2c3e50; /* Dark background color */
+}
+
+.container {
+  text-align: center;
+  background-color: #ecf0f1; /* Light background color */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 36px;
+  color: #3498db; /* Blue heading color */
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #e74c3c; /* Red button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+#recommendation {
+  margin-top: 30px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #3498db; /* Blue background for movie recommendations */
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+input[type="range"] {
+  width: 80%;
+  margin-top: 20px;
+}
+
+select[multiple] {
+  height: 120px;
+}
+
+#durationValue {
+  color: #3498db; /* Blue color for the duration value display */
+  font-size: 18px;
+}
+
